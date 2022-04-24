@@ -13,12 +13,12 @@ spec:
       paths:
       {{- range .paths }}
       - path: {{ . }}
-      pathType: Prefix
-      backend:
-        service:
-          name: {{ $fullName }}
-          port:
-            number: {{ $svcPort }}
+        pathType: Prefix
+        backend:
+          service:
+            name: {{ $fullName }}
+            port:
+              number: {{ $svcPort }}
       {{- end }}
   {{- end }}
 {{- end }}
