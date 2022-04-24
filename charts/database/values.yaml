@@ -28,6 +28,15 @@ podAnnotations: {}
 podSecurityContext: {}
   # fsGroup: 2000
 
+podVariables: 
+  - name: ACCEPT_EULA
+    value: "Y"
+  - name: SA_PASSWORD
+    value: "yourStrong(!)Password"
+  - name: MSSQL_PID
+    value: "Express"
+
+
 securityContext: {}
   # capabilities:
   #   drop:
