@@ -1,5 +1,5 @@
 {{- if .Values.ingress.enabled -}}
-{{- $fullName := include "example.fullname" . -}}
+{{- $fullName := .Values.fullnameOverride -}}
 {{- $svcPort := .Values.service.port -}}
 {{- if semverCompare ">=1.14-0" .Capabilities.KubeVersion.GitVersion -}}
 apiVersion: networking.k8s.io/v1
@@ -8,7 +8,7 @@ apiVersion: extensions/v1beta1
 {{- end }}
 kind: Ingress
 metadata:
-  name: {{ .Values.fullnameOverride }}
+  name: {{ $fullName }}
 spec:
   rules:
     {{- range .Values.ingress.hosts }}
@@ -20,7 +20,7 @@ spec:
           pathType: Prefix
             backend:
               service:
-                name: {{ .Values.fullnameOverride }}
+                name: {{ $fullName }}
                 port:
                   number: {{ $svcPort }}
           {{- end }}
