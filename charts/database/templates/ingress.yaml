@@ -9,12 +9,6 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: {{ $fullName }}
-  labels:
-    {{- include "example.labels" . | nindent 4 }}
-  # {{- with .Values.ingress.annotations }}
-  # annotations:
-  #   {{- toYaml . | nindent 4 }}
-  # {{- end }}
 spec:
   rules:
     {{- range .Values.ingress.hosts }}
