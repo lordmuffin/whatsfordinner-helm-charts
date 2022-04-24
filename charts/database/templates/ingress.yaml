@@ -11,14 +11,14 @@ spec:
   - host: {{ .host | quote }}
     http:
       paths:
-        {{- range .paths }}
-        - path: {{ . }}
-        pathType: Prefix
-          backend:
-            service:
-              name: {{ $fullName }}
-              port:
-                number: {{ $svcPort }}
-        {{- end }}
+      {{- range .paths }}
+      - path: {{ . }}
+      pathType: Prefix
+      backend:
+        service:
+          name: {{ $fullName }}
+          port:
+            number: {{ $svcPort }}
+      {{- end }}
   {{- end }}
 {{- end }}
