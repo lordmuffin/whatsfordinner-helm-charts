@@ -8,7 +8,7 @@ apiVersion: extensions/v1beta1
 {{- end }}
 kind: Ingress
 metadata:
-  name: {{ include .Values.fullnameOverride }}
+  name: {{ .Values.fullnameOverride }}
 spec:
   rules:
     {{- range .Values.ingress.hosts }}
@@ -20,7 +20,7 @@ spec:
           pathType: Prefix
             backend:
               service:
-                name: {{ include .Values.fullnameOverride }}
+                name: {{ .Values.fullnameOverride }}
                 port:
                   number: {{ $svcPort }}
           {{- end }}
