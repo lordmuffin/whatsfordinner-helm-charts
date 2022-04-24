@@ -56,7 +56,9 @@ ingress:
     # kubernetes.io/tls-acme: "true"
   hosts:
     - host: sql-express.local
-      paths: []
+      paths: [
+        "/"
+      ]
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
