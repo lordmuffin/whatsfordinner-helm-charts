@@ -3,9 +3,9 @@ entries:
   example:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-04-24T20:00:08.986401757Z"
+    created: "2022-04-24T20:04:00.65128063Z"
     description: A Helm chart for Kubernetes
-    digest: c441f9ad35be88ad41dfdfa2c7020717ba417a60f42fc4465161172b20ef9ea7
+    digest: 0921b63dffd35c7cb29e6f3669ce80cd2fa7fdbf2915f0878f31cecd6d314a1a
     name: example
     type: application
     urls:
@@ -14,12 +14,12 @@ entries:
   sql-express:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-04-24T20:00:08.987083659Z"
+    created: "2022-04-24T20:04:00.651924341Z"
     description: A Helm chart for Kubernetes
-    digest: 2815aa9eb5c28697122c0e057a67f9f7c71fc09c7a136c1e3b0e5ea907b6dc39
+    digest: 1d9d5338753e9ae4b60d2969ba49bcd1aac59bc4b08ad76aad4fd5ec40f1a580
     name: sql-express
     type: application
     urls:
     - sql-express-0.3.8.tgz
     version: 0.3.8
-generated: "2022-04-24T20:00:08.985626956Z"
+generated: "2022-04-24T20:04:00.650426115Z"
