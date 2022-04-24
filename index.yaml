@@ -1,25 +1,25 @@
 apiVersion: v1
 entries:
-  SQL Express Database:
+  SQLExpressDatabase:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-04-23T02:03:07.927490066Z"
+    created: "2022-04-24T03:21:46.606607946Z"
     description: A Helm chart for Kubernetes
-    digest: 27a99803115fcfafab49640aaea2378b52b33373ed067e6a0912408d3723aac8
-    name: SQL Express Database
+    digest: faa9fd0c5df59594afdf12fe2be76befcaf7e59765f6d35274f5bd85468fdab9
+    name: SQLExpressDatabase
     type: application
     urls:
-    - SQL Express Database-0.1.0.tgz
+    - SQLExpressDatabase-0.1.0.tgz
     version: 0.1.0
   example:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-04-23T02:03:07.92861383Z"
+    created: "2022-04-24T03:21:46.607147151Z"
     description: A Helm chart for Kubernetes
-    digest: 2535e14b7248cec17b96cdbd7e2590c7cfc3362212a0c16daa5be77ed60acbf6
+    digest: 4b00765fbbcf74ce5cf41a482fb69016f0c35b3419e97554a499c4e94dba02f2
     name: example
     type: application
     urls:
     - example-0.1.0.tgz
     version: 0.1.0
-generated: "2022-04-23T02:03:07.92617009Z"
+generated: "2022-04-24T03:21:46.605289534Z"
